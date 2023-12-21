@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    color: #34355B;
+    
+}
+body,button {
+    font-family: 'DM Sans', sans-serif;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: normal;
+    }
+/* Screen1 */
+.screen1 {
+    height: 42.4rem;
+    width: 42.8rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    background: #FFF;
+    border-radius: .5rem;
+    box-shadow: 0px 2rem 5rem 0px rgba(0, 0, 0, 0.80);
+    text-align: center;
+}
+.screen1 p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    margin:1.4rem auto 2rem;
+    }
+.hide {
+    display: none;
+}
+.screen1 button {
+    width: 24.9rem;
+    height: 19.2rem;
+    border: none;
+    background: #FFF;
+    cursor: pointer;
+}
+.screen1 button:hover {
+    animation: shake 0.5s infinite 0.2s;
+}
+/* Screen2 */
+.screen2 {
+    width: 42.8rem;
+    height: 56.4rem;
+    padding: 4.8rem 6.4rem;
+    border-radius: .5rem;
+    background: #FFF;
+    box-shadow: 0px 2rem 5rem 0px rgba(0, 0, 0, 0.80);
+    text-align: center;
+}
+.sorte1 {
+    margin: 1.7rem auto 6rem;
+    animation: move 1.2s 0.1s backwards;
+}
+.sorte2 {
+    margin: 1.7rem auto 6rem;
+    animation: move 1.2s 0.1s backwards;
+}
+.screen2 button {
+    width: 17.4rem;
+    height: 5.2rem;
+    border-radius: .4rem;
+    background: #FF9500;
+    margin-top: 5rem;
+    border: none;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-5px, 3px); }
+    50% { transform: translate(5px, 0); }
+    75% { transform: translate(-5px, 0); }
+    100% { transform: translate(5px, 0); }
+  }
+
+@keyframes move {
+    0% {
+        transform:translateY(100%) scale(0.5)
+    }
+    50% {
+        transform:translateY(0%) scale(1)
+    }
+}
